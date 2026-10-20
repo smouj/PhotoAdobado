@@ -4,17 +4,29 @@
 
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-6cb6ff)](LICENSE-MIT)
 [![Rust](https://img.shields.io/badge/Rust-1.95%2B-ff7a59)](Cargo.toml)
-[![Status](https://img.shields.io/badge/status-early%20alpha-d69e2e)](#photo-adobado)
-[![Stars](https://img.shields.io/github/stars/smouj/PhotoAdobado?style=flat&color=FF5C5C)](https://github.com/smouj/PhotoAdobado/stargazers)
+[![Windows build](https://github.com/smouj/PhotoAdobado/actions/workflows/windows-build.yml/badge.svg?branch=main)](https://github.com/smouj/PhotoAdobado/actions/workflows/windows-build.yml)
+[![Estado](https://img.shields.io/badge/status-Windows%20smoke%20test-6cb6ff)](#estado)
+[![Estrellas](https://img.shields.io/github/stars/smouj/PhotoAdobado?style=flat&color=B8F34A)](https://github.com/smouj/PhotoAdobado/stargazers)
 [![Adobado Kit](https://img.shields.io/badge/Adobado%20Kit-hub-b8f34a)](https://github.com/smouj/Adobado_Kit)
 
 Editor de imagen nativo, local y open source. Derivado de PhotoCraft, rebrandeado para Adobado Kit.
 
-> **Alpha temprana.** Es un derivado de un proyecto en desarrollo activo. No es un sustituto profesional de Photoshop ni una versión estable.
+> **Prueba de humo superada en Windows (20/10/2026).** Build de Windows correcta y app instalada y abierta en el PC. La prueba de abrir, modificar y exportar un archivo real sigue pendiente; el proyecto continúa en alpha.
 >
-> Proyecto independiente. No está afiliado a Adobe ni a ArtCraft. Las marcas de terceros pertenecen a sus titulares.
+> Proyecto independiente. No afiliado a ArtCraft ni a Adobe.
 
-![PhotoAdobado](docs/screenshot.png)
+![PhotoAdobado — captura real de la aplicación](docs/screenshot.png)
+
+<sub>Captura real de la aplicación en Windows.</sub>
+
+## Estado
+
+- **Build de Windows:** correcto en GitHub Actions; consulta el [workflow actual](https://github.com/smouj/PhotoAdobado/actions/workflows/windows-build.yml).
+- **Prueba manual:** instalada y abierta en Windows el 20/10/2026.
+- **Flujo funcional:** abrir, modificar y exportar un archivo real sigue pendiente.
+- **Disponibilidad:** alpha; todavía no se declara lista para uso general.
+- **Release pública:** [v0.1.0-alpha.1](https://github.com/smouj/PhotoAdobado/releases/tag/v0.1.0-alpha.1) se publicó antes de la identidad visual actual y conserva el icono anterior. El ZIP se actualizará después de verificar el icono integrado y la prueba funcional.
+- **Commit de origen:** 03d0c7e3b39cfb401cdbba590431141ee4c6c8fa.
 
 ## Qué incluye
 

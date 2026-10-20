@@ -16,6 +16,14 @@
 - README propio. Se retiran los logos y assets de marca de ArtCraft.
 - No se han cambiado el motor de imagen, los formatos ni las funciones de edición.
 
+## Estado de validación — 20/10/2026
+
+- **Build de Windows:** correcto en GitHub Actions ([workflow](https://github.com/smouj/PhotoAdobado/actions/workflows/windows-build.yml)).
+- **Prueba manual:** app instalada y abierta en Windows.
+- **Uso con archivos reales:** abrir, modificar y exportar sigue pendiente.
+- **Distribución:** hay una release alpha anterior al icono actual; su ZIP conserva el icono previo y debe actualizarse después de probar el nuevo binario.
+- **Origen:** 03d0c7e3b39cfb401cdbba590431141ee4c6c8fa.
+
 ## Marcas
 
 ArtCraft, PhotoCraft y sus logos son marcas del ArtCraft Team y no están cubiertos por la licencia de código. Esta distribución no los usa. Adobe y Photoshop son marcas de Adobe Inc.; este proyecto no está afiliado a Adobe.
