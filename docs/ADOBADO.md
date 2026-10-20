@@ -30,4 +30,4 @@ ArtCraft, PhotoCraft y sus logos son marcas del ArtCraft Team y no están cubier
 
 ## Aviso
 
-Esta es una distribución modificada. Las modificaciones son de SMOUJ013 (2026). El código original conserva sus avisos de copyright y licencia.
+Esta es una distribución modificada. Las modificaciones son de @smouj (2026). El código original conserva sus avisos de copyright y licencia.

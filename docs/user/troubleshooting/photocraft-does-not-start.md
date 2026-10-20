@@ -1,11 +1,12 @@
 ---
 title: PhotoCraft does not start
-description: PhotoCraft closes or crashes at startup on Windows PCs with Intel graphics (it uses DirectX 12 and picks a safer graphics mode after a crash) or on older Intel Macs (0.8.2 fixes one cause; no fix yet for Macs patched with OpenCore Legacy Patcher).
+description: Upstream PhotoCraft documents startup issues on older graphics hardware; check the current PhotoAdobado build before applying version-specific advice.
 order: 30
-verified: 0.8.2
 ---
 
-On Windows, PhotoCraft starts Intel graphics on DirectX 12. If PhotoCraft closed while it was starting, start it again: it picks a safer graphics mode after a crash. On an older Intel Mac that shows a `Device(Lost)` error, update to 0.8.2, which fixes one cause; on Macs patched with OpenCore Legacy Patcher there is no fix yet.
+> **Upstream note:** The version-specific behavior below is documented for PhotoCraft. It has not been verified against a published PhotoAdobado package. Paths and graphics options may differ in PhotoAdobado.
+
+If PhotoAdobado closes at startup, note the app version and operating system and report the problem to the [PhotoAdobado issue tracker](https://github.com/smouj/PhotoAdobado/issues). The upstream troubleshooting details below may help identify a graphics-driver issue.
 
 ## Symptoms
 
@@ -46,7 +47,7 @@ On Windows, PhotoCraft draws with your graphics driver. Intel's Vulkan driver (`
 
 ## Still stuck?
 
-See [Get help with a problem](get-help.md). Say which graphics card you have, which PhotoCraft version you use and how you started it. Add one of these:
+See [Get help with a problem](get-help.md). Report the PhotoAdobado version, operating system, graphics card, and how you started the app in the [PhotoAdobado issue tracker](https://github.com/smouj/PhotoAdobado/issues). Add a sanitized log only if you have checked that it contains no private data.
 
 - If you can open PhotoCraft: the text from **Help › System Info…**.
 - If PhotoCraft does not open at all: the log file `photocraft.log`, plus the faulting module and exception code from Event Viewer on Windows. PhotoCraft keeps it in a `logs` folder inside its settings folder:

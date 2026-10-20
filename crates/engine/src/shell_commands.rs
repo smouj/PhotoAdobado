@@ -83,7 +83,7 @@ pub const SHELL_COMMANDS: &[(&str, &str, &[&str], Option<&str>)] = &[
     ("window.theme.softDark", "Soft Dark Theme", &["Window", "Theme"], None),
     ("window.theme.system", "Sync with system", &["Window", "Theme"], None),
     ("edit.search", "Search…", &["Edit"], Some("Cmd+F")),
-    ("help.discord", "Abrir Adobado Kit…", &["Help"], None),
+    ("help.discord", "Obtener ayuda y reportar un problema…", &["Help"], None),
     ("help.website", "PhotoAdobado Website", &["Help"], None),
     ("help.artcraftWebsite", "Adobado Kit", &["Help"], None),
     ("help.github", "PhotoAdobado on GitHub", &["Help"], None),

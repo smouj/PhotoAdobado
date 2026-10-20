@@ -14,8 +14,7 @@ section: graphics
 priority: optional
 maintainer: ${PHOTOCRAFT_MAINTAINER}
 vendor: Learning Machines LLC
-homepage: https://getartcraft.com/apps/photocraft
-license: MIT OR Apache-2.0
+homepage: https://github.com/smouj/PhotoAdobadolicense: MIT OR Apache-2.0
 description: |-
   Open-source, native image editor with familiar, professional tools.
   Layers, masks, adjustment layers, layer styles, type and brushes; opens and

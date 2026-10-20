@@ -2,7 +2,6 @@
 title: Add and style text
 description: Add point or paragraph text with the Horizontal Type Tool in PhotoCraft, then give it a drop shadow or glow.
 order: 40
-verified: 0.8.2
 ---
 
 Pick the **Horizontal Type Tool** (shortcut `T`), click on the canvas for a line of text or drag for a text box, and type. Text stays editable, so you can change the words and the style later.

@@ -2,7 +2,6 @@
 title: Open and save files
 description: Open a PSD or other image in PhotoCraft, and save it with its layers or as a flat copy.
 order: 10
-verified: 0.8.2
 ---
 
 Open a file with **File › Open…** and keep your layers with **File › Save As…**, choosing **PSD Document** or **PhotoCraft** as the type. Formats such as PNG and JPEG are flat: they hold one image with no layers.

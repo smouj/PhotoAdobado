@@ -24,8 +24,12 @@ BIZ UDMincho; not the web build), under the SIL Open Font License 1.1. Their lic
 ship with the package as OFL-<family>.txt.
 
 Modifications — PhotoAdobado
-This repository is a modified derivative of PhotoCraft, maintained by SMOUJ013.
+This repository is a modified derivative of PhotoCraft, maintained by @smouj.
 Changes: product name and visible branding, window and About text, help links,
 application icons and README. No ArtCraft name, wordmark or logo is used in this
 distribution. The original code remains Copyright (c) 2026 ArtCraft Team and the
 PhotoCraft contributors, under MIT OR Apache-2.0. See docs/ADOBADO.md.
+
+Adobado product icon artwork
+
+The Adobado product icon artwork is original work by @smouj, supplied in Adobado_Icon_Pack_Final.zip. The owner authorizes redistribution under MIT OR Apache-2.0. Complete licence texts are in assets/app-icon/LICENSE-MIT.txt and assets/app-icon/LICENSE-APACHE.txt. The product icon artwork is not derived from Adobe products.
