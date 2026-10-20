@@ -1,0 +1,39 @@
+PhotoAdobado's Korean, German, Spanish, Brazilian Portuguese, Italian, Ukrainian, Dutch, Czech,
+Turkish, Hungarian and Serbian UI translation catalogs are licensed under MIT OR Apache-2.0,
+at your option.
+The full license texts are in ../../../../LICENSE-MIT and ../../../../LICENSE-APACHE.
+
+Korean translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
+
+German translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
+
+Spanish translations: contributed by @gorevyoneticisi with OpenAI Codex as an AI contributor.
+The resulting catalog is licensed under MIT OR Apache-2.0 as stated above; the translations are
+original translations of PhotoAdobado's English labels, and no proprietary translation resources
+were used.
+
+Brazilian Portuguese translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
+
+Italian translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
+
+Ukrainian translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
+
+Dutch translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
+
+Czech translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
+
+Turkish translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
+
+Hungarian translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
+
+Serbian translations: PhotoAdobado contributors, original translations of
+PhotoAdobado's English labels; no proprietary translation resources were used.
