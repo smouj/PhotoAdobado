@@ -1,11 +1,12 @@
 ---
 title: The Windows taskbar turns black when PhotoCraft is maximized
-description: On Windows 11, PhotoCraft 0.7.0 can turn the taskbar black or hide it when maximized. PhotoCraft 0.8.2 fixes this; update.
+description: Upstream PhotoCraft 0.8.2 fixed a Windows taskbar issue; check the current PhotoAdobado build before applying that advice.
 order: 10
-verified: 0.8.2
 ---
 
-Update PhotoCraft. Version 0.7.0 on Windows 11 could turn the taskbar black or hide it while the window was maximized. PhotoCraft 0.8.2 includes the fix.
+> **Upstream note:** The taskbar issue and fix below are documented for PhotoCraft 0.7.0–0.8.2. They have not been verified against a published PhotoAdobado package.
+
+If this happens in PhotoAdobado, check the app version and Windows version, then report the issue to the [PhotoAdobado issue tracker](https://github.com/smouj/PhotoAdobado/issues).
 
 ## Symptoms
 
@@ -14,9 +15,9 @@ Update PhotoCraft. Version 0.7.0 on Windows 11 could turn the taskbar black or h
 
 ## Fix
 
-1. Check your version with **Help › System Info…**, which starts with "PhotoCraft" and the version.
-2. If it is older than 0.8.2, download the [latest release](https://github.com/storytold/photocraft/releases/latest) or update with [ArtCraft Launcher](https://getartcraft.com/docs/craft-launcher). See [Install PhotoCraft](../getting-started/install.md).
-3. Start PhotoCraft again and maximize the window.
+1. Check your version in **Help › System Info…**.
+2. Restart PhotoAdobado and test whether the taskbar behavior persists.
+3. If it does, send your app version, Windows version, and steps to the [PhotoAdobado issue tracker](https://github.com/smouj/PhotoAdobado/issues).
 
 A user who saw the black taskbar on 0.7.0 confirmed that it is gone in 0.8.2 ([issue 3864](https://github.com/storytold/photocraft/issues/3864)).
 
@@ -26,4 +27,4 @@ PhotoCraft draws its own title bar. When such a window was maximized, Windows si
 
 ## Still stuck?
 
-If you still see it on 0.8.2, add your Windows version and PhotoCraft version to [issue 3864](https://github.com/storytold/photocraft/issues/3864), or ask in [Discord](https://discord.gg/artcraft). As a test, you can switch on **System title bar** under **Edit › Preferences › Interface…**, click **Apply** and restart PhotoCraft; Windows then draws the title bar. See [Get help with a problem](get-help.md) for what to include.
+If the problem persists, include a screenshot if it helps explain what you see. Do not attach private photos or documents; see [Get help with a problem](get-help.md).

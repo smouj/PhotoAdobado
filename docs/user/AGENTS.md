@@ -1,60 +1,37 @@
-# User docs: rules for agents and contributors
+# User docs: writing and review rules
 
-Everything in this folder (except this file, CLAUDE.md and README.md) is published at
-https://getartcraft.com/docs/photocraft. The file path is the URL:
-`troubleshooting/taskbar-turns-black.md` → `/docs/photocraft/troubleshooting/taskbar-turns-black`.
-Renaming a file breaks links, so add the old path to `redirect_from` when you rename.
-
-## Who reads this
-
-Artists using PhotoCraft, Discord mods answering them, and AI assistants looking things up for
-either. Write for an artist, not a developer.
+These guides are part of PhotoAdobado. Write for someone trying to finish a photo task, not for a
+developer. The source project is PhotoCraft; keep upstream names only when explaining upstream
+history, technical identifiers, or a behavior that was actually reported there.
 
 ## Page rules
 
-- One question or problem per page. Lead with the answer or the fix in the first two lines.
-- Plain words, short sentences, numbered steps for anything the reader does.
-- Start the body at `##`. The page title comes from frontmatter.
-- Link to other pages instead of repeating them. Use relative links to the `.md` file:
-  `[Install PhotoCraft](../getting-started/install.md)`.
-- No marketing copy, no "simply", no claims you have not checked in the code or a release.
-- Call the product "PhotoCraft", as the app, its downloads and getartcraft.com do.
-- Name UI labels exactly as the app shows them, in **bold**. Menu paths read `File › Open…`.
-- Troubleshooting pages: `## Symptoms`, `## Fix`, `## Why this happens` (optional),
-  `## Still stuck?` (link the issue tracker or Discord).
+- Lead with the answer or next useful step.
+- Use plain language, short paragraphs, and numbered steps for actions.
+- Match menu and control labels to the current app.
+- Link to related guides instead of copying them.
+- Never present an upstream release, launcher, support channel, or feature as a PhotoAdobado release.
+- Describe behaviors checked in the current PhotoAdobado source or a tested Adobado package. If a
+  note comes from PhotoCraft, label it as upstream and say when PhotoAdobado has not been checked.
+- Send PhotoAdobado bug reports to its [issue tracker](https://github.com/smouj/PhotoAdobado/issues).
+  The [Adobado Kit website](https://smouj.github.io/Adobado_Kit/) links to the family of apps.
+- Do not promise support through a community service unless the project publishes that channel.
 
 ## Frontmatter
 
     ---
     title: Export an image as PNG or JPEG
-    description: One sentence for search results, link previews and AI summaries.
-    order: 10                 # optional, sorts within the folder (lower first)
-    verified: 0.7.0           # optional, app version you last checked this page against
-    redirect_from: [old/path] # optional, old URLs (relative to /docs/photocraft)
+    description: One sentence for search results and link previews.
+    order: 10                 # optional, sorts within the folder
+    verified: 0.1.0-alpha.1   # only when checked against this PhotoAdobado release
     ---
 
-Only `key: value` and `key: [a, b]` lines work. Quote values that start with a quote or contain ` #`.
+Omit verified when there is no PhotoAdobado release or the page has not been checked against it.
+Do not use a PhotoCraft version as PhotoAdobado's verified version.
 
-Set `verified` to the latest release (the newest release tag) after checking the page against that tag with `git show <tag>:<path>`. Pages describe the latest release users download, not unreleased code on main.
+## Before publishing
 
-## Folders
-
-- `getting-started/` install and first run
-- `guides/` how to do one thing
-- `troubleshooting/` symptom → fix
-- `faq/` short answers
-- `reference/` lists and settings
-
-A folder's `index.md` names the folder in the sidebar. Files or folders starting with `_` are
-drafts and are not published.
-
-## Check before you push
-
-    node <path to your artcraft-services checkout>/frontend/apps/artcraft-website-next/scripts/docs/core.mjs docs/user
-
-The checker lives in storytold/artcraft-services. A CI check will be added once it is on that repo's main branch.
-
-## Support PRs
-
-Pages written to answer a user question come in as PRs titled `docs(support): <page title>`.
-Review them like code: check every claim against the source.
+- Check links and UI labels.
+- Confirm each product claim against current source or a tested package.
+- Keep upstream issue and pull-request links only when they explain upstream provenance.
+- Check the current README for the app's honest installation and test status.

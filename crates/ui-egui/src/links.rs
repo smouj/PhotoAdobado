@@ -1,20 +1,22 @@
-//! Community and project links: the Help menu, the About dialog, the start screen and the title
-//! bar all open these. URLs follow the crafting-app pattern (`getartcraft.com/apps/<app>`,
-//! `github.com/storytold/<app>`).
+//! Project links: the Help menu, the About dialog, the start screen and the title bar use these.
 
 use serde_json::{Value, json};
 
 use crate::PhotocraftApp;
 
-pub const DISCORD: &str = "https://github.com/smouj/Adobado_Kit";
-pub const ARTCRAFT_WEBSITE: &str = "https://github.com/smouj/Adobado_Kit";
+pub const SUPPORT: &str = "https://github.com/smouj/PhotoAdobado/issues";
+/// Compatibility alias for older integrations that used the former community-link name.
+pub const DISCORD: &str = SUPPORT;
+pub const KIT_WEBSITE: &str = "https://smouj.github.io/Adobado_Kit/";
+/// Compatibility alias for the previous brand-specific constant name.
+pub const ARTCRAFT_WEBSITE: &str = KIT_WEBSITE;
 pub const APP_PAGE: &str = "https://github.com/smouj/PhotoAdobado";
 pub const GITHUB: &str = "https://github.com/smouj/PhotoAdobado";
 pub const ISSUES: &str = "https://github.com/smouj/PhotoAdobado/issues";
 
 /// Help-menu link commands: (id, url). Labels live in `menus::UI_COMMANDS`.
 pub const COMMANDS: &[(&str, &str)] =
-    &[("help.discord", DISCORD), ("help.website", APP_PAGE), ("help.artcraftWebsite", ARTCRAFT_WEBSITE), ("help.github", GITHUB), ("help.reportIssue", ISSUES)];
+    &[("help.discord", SUPPORT), ("help.website", APP_PAGE), ("help.artcraftWebsite", KIT_WEBSITE), ("help.github", GITHUB), ("help.reportIssue", ISSUES)];
 
 pub fn url_for(id: &str) -> Option<&'static str> {
     COMMANDS.iter().find(|c| c.0 == id).map(|c| c.1)
@@ -32,20 +34,20 @@ pub fn open(app: &mut PhotocraftApp, ctx: &egui::Context, url: &str) -> Value {
     json!({"url": url})
 }
 
-/// The prominent "Join us on Discord" button.
-pub fn discord_button(app: &mut PhotocraftApp, ui: &mut egui::Ui, min_width: f32) -> egui::Response {
-    let r = crate::widgets::primary_button(ui, tl!("Abrir Adobado Kit"), min_width).on_hover_text(DISCORD);
+/// The primary support action, linked to this app's issue tracker.
+pub fn support_button(app: &mut PhotocraftApp, ui: &mut egui::Ui, min_width: f32) -> egui::Response {
+    let r = crate::widgets::primary_button(ui, tl!("Obtener ayuda"), min_width).on_hover_text(SUPPORT);
     if r.clicked() {
-        open(app, ui.ctx(), DISCORD);
+        open(app, ui.ctx(), SUPPORT);
     }
     r
 }
 
-/// "PhotoAdobado website · GitHub · Adobado Kit" as links, centred. Clicks route through [`open`] (the
+/// "PhotoAdobado project · GitHub · Adobado Kit" as links, centred. Clicks route through [`open`] (the
 /// platform browser service) rather than `ui.hyperlink_to`, which uses the unreliable `ctx.open_url`.
 pub fn link_row(app: &mut PhotocraftApp, ui: &mut egui::Ui) {
     let t = crate::theme::Tokens::get(ui.ctx());
-    let links = [(tl!("PhotoAdobado website"), APP_PAGE), (tl!("GitHub"), GITHUB), (tl!("Adobado Kit"), ARTCRAFT_WEBSITE)];
+    let links = [(tl!("PhotoAdobado project"), APP_PAGE), (tl!("GitHub"), GITHUB), (tl!("Adobado Kit"), KIT_WEBSITE)];
     let font = egui::FontId::proportional(12.5);
     let sep = "  ·  ";
     let width: f32 = links.iter().map(|(l, _)| ui.painter().layout_no_wrap((*l).into(), font.clone(), t.text).size().x).sum::<f32>()
@@ -74,7 +76,7 @@ mod tests {
 
     #[test]
     fn links_open_through_the_platform_service() {
-        // Issue #14: links (Help menu, Discord button, start-page links) must open in the browser.
+        // Issue #14: links (Help menu, Kit button, start-page links) must open in the browser.
         // They route through the `open_url` service rather than the unreliable `ctx.open_url`.
         use std::sync::{Arc, Mutex};
         let opened: Arc<Mutex<Vec<String>>> = Arc::new(Mutex::new(Vec::new()));
@@ -93,9 +95,9 @@ mod tests {
             crate::menus::invoke(&mut app, &ctx, id, json!({})).unwrap();
             assert_eq!(opened.lock().unwrap().last().map(String::as_str), Some(*url), "{id}");
         }
-        // The direct open() helper (Discord button / start-page links) also uses it.
-        open(&mut app, &ctx, DISCORD);
-        assert_eq!(opened.lock().unwrap().last().map(String::as_str), Some(DISCORD));
+        // The direct open() helper (Kit button / start-page links) also uses it.
+        open(&mut app, &ctx, SUPPORT);
+        assert_eq!(opened.lock().unwrap().last().map(String::as_str), Some(SUPPORT));
     }
 
     #[test]
@@ -113,7 +115,7 @@ mod tests {
         let mut app = PhotocraftApp::new(photocraft_engine::Session::new(), Default::default());
         let ctx = egui::Context::default();
         for (id, url) in [
-            ("help.discord", "https://github.com/smouj/Adobado_Kit"),
+            ("help.discord", "https://github.com/smouj/PhotoAdobado/issues"),
             ("help.website", "https://github.com/smouj/PhotoAdobado"),
             ("help.github", "https://github.com/smouj/PhotoAdobado"),
         ] {

@@ -59,4 +59,4 @@ En Windows, el binario sale en target/release/photocraft.exe. El nombre interno 
 
 PhotoAdobado forma parte de Adobado Kit: https://github.com/smouj/Adobado_Kit
 
-Hecho por SMOUJ013.
+Hecho por @smouj.

@@ -1,25 +1,29 @@
 ---
-title: PhotoCraft
-description: PhotoCraft is a free, open-source image editor with layers, masks, type and real PSD files, built as an alternative to Adobe Photoshop.
-verified: 0.8.2
+title: PhotoAdobado
+description: PhotoAdobado is a local-first image editor; a complete file workflow is still being validated.
 ---
 
-PhotoCraft is a free, open-source image editor with layers, masks, adjustment layers, layer styles, type, vector shapes and brushes. It is an alternative to Adobe Photoshop: the menus, panels, tools and shortcuts follow Photoshop's layout, so Photoshop users find things where they expect them.
+> **Test status:** PhotoAdobado has been installed and opened on Windows. A complete workflow with a
+> real file still needs validation. These guides describe source-level capabilities and may not match
+> a published Adobado package.
 
-It is a native app written in Rust that draws the canvas on your graphics card, works offline, and opens and saves layered PSD files. It runs on macOS, Windows, Linux and FreeBSD, and a web version runs in the browser. PhotoCraft is in early alpha: much of Photoshop's feature surface exists, but it is not yet a Photoshop replacement for daily professional work. See [Can PhotoCraft replace Photoshop?](faq/replace-photoshop.md).
+PhotoAdobado is a local image editor with layers, masks, text, and adjustment tools.
+
+It is a native app written in Rust. PhotoAdobado is still in alpha; check the repository notes before
+using it for important work. See [Can it replace Photoshop?](faq/replace-photoshop.md).
 
 ## Start here
 
-- [Install PhotoCraft](getting-started/install.md)
+- [Install PhotoAdobado](getting-started/install.md)
 - [Your first edit](getting-started/index.md)
 - [Guides: open, adjust, select, type, export](guides/index.md)
 - [Troubleshooting](troubleshooting/index.md)
 - [FAQ](faq/index.md)
 
-## Part of the Craft App Suite
+## Part of Adobado Kit
 
-PhotoCraft is one of the Crafting Apps from the ArtCraft team, next to VectorCraft, FilmCraft and the other Craft apps. You can install and update them from [ArtCraft Launcher](https://getartcraft.com/docs/craft-launcher).
+PhotoAdobado is one of the independent desktop tools in Adobado Kit. Each app has its own repository, downloads and release status; the [Kit page](https://smouj.github.io/Adobado_Kit/) lists the family.
 
 ## Get help
 
-Ask in [Discord](https://discord.gg/artcraft) or open an issue in the [issue tracker](https://github.com/storytold/photocraft/issues). In PhotoCraft, **Help › Report an Issue…** opens the same issue tracker.
+Open an issue in the [PhotoAdobado issue tracker](https://github.com/smouj/PhotoAdobado/issues). In PhotoAdobado, **Help › Report an Issue…** opens the same tracker.

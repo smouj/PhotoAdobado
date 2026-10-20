@@ -2,7 +2,6 @@
 title: Guides
 description: Step-by-step guides for the everyday tasks in PhotoCraft.
 order: 20
-verified: 0.8.2
 ---
 
 - [Open and save files](open-and-save-files.md)

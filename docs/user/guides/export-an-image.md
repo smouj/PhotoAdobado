@@ -2,7 +2,6 @@
 title: Export an image
 description: Export a PNG, JPG, WebP, TIFF or TGA from PhotoCraft with a preview, a size estimate and a scale.
 order: 50
-verified: 0.8.2
 ---
 
 Choose **File › Export › Export As…**, set the format, and click **Export**. The dialog shows a preview and an estimate of the file size before you save. Your layered document is not changed.
