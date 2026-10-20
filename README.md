@@ -1,4 +1,5 @@
 # PhotoAdobado
+![PhotoAdobado](docs/screenshot.png)
 
 <p align="center"><img src="assets/adobado/icon.png" width="104" alt="PhotoAdobado"></p>
 
