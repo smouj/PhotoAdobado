@@ -1,5 +1,4 @@
 # PhotoAdobado
-![PhotoAdobado](docs/screenshot.png)
 
 <p align="center"><img src="assets/adobado/icon.png" width="104" alt="PhotoAdobado"></p>
 
@@ -13,6 +12,8 @@ Editor de imagen nativo, local y open source. Derivado de PhotoCraft, rebrandead
 > **Alpha temprana.** Es un derivado de un proyecto en desarrollo activo. No es un sustituto profesional de Photoshop ni una versión estable.
 >
 > Proyecto independiente. No está afiliado a Adobe ni a ArtCraft. Las marcas de terceros pertenecen a sus titulares.
+
+![PhotoAdobado](docs/screenshot.png)
 
 ## Qué incluye
 
