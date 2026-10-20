@@ -5,13 +5,13 @@
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-6cb6ff)](LICENSE-MIT)
 [![Rust](https://img.shields.io/badge/Rust-1.95%2B-ff7a59)](Cargo.toml)
 [![Windows build](https://github.com/smouj/PhotoAdobado/actions/workflows/windows-build.yml/badge.svg?branch=main)](https://github.com/smouj/PhotoAdobado/actions/workflows/windows-build.yml)
-[![Estado](https://img.shields.io/badge/status-Windows%20smoke%20test-6cb6ff)](#estado)
+[![Prueba](https://img.shields.io/badge/prueba-inicio%20comprobado-6cb6ff)](#estado)
 [![Estrellas](https://img.shields.io/github/stars/smouj/PhotoAdobado?style=flat&color=B8F34A)](https://github.com/smouj/PhotoAdobado/stargazers)
 [![Adobado Kit](https://img.shields.io/badge/Adobado%20Kit-hub-b8f34a)](https://github.com/smouj/Adobado_Kit)
 
-Editor de imagen nativo, local y open source. Derivado de PhotoCraft, rebrandeado para Adobado Kit.
+Retoca imágenes con capas, máscaras, ajustes y compatibilidad declarada con PSD.
 
-> **Prueba de humo superada en Windows (20/10/2026).** Build de Windows correcta y app instalada y abierta en el PC. La prueba de abrir, modificar y exportar un archivo real sigue pendiente; el proyecto continúa en alpha.
+> **Pruebas en Windows (20/10/2026):** la compilación, la instalación y el inicio se han comprobado. Aún falta probar un flujo completo con un archivo real: abrirlo, editarlo y exportarlo.
 >
 > Proyecto independiente. No afiliado a ArtCraft ni a Adobe.
 
@@ -22,10 +22,10 @@ Editor de imagen nativo, local y open source. Derivado de PhotoCraft, rebrandead
 ## Estado
 
 - **Build de Windows:** correcto en GitHub Actions; consulta el [workflow actual](https://github.com/smouj/PhotoAdobado/actions/workflows/windows-build.yml).
-- **Prueba manual:** instalada y abierta en Windows el 20/10/2026.
-- **Flujo funcional:** abrir, modificar y exportar un archivo real sigue pendiente.
-- **Disponibilidad:** alpha; todavía no se declara lista para uso general.
-- **Release pública:** [v0.1.0-alpha.1](https://github.com/smouj/PhotoAdobado/releases/tag/v0.1.0-alpha.1) se publicó antes de la identidad visual actual y conserva el icono anterior. El ZIP se actualizará después de verificar el icono integrado y la prueba funcional.
+- **Instalación e inicio:** comprobados en Windows el 20/10/2026.
+- **Prueba con un archivo:** aún falta completar el flujo de abrir, editar y exportar.
+- **Estado:** alpha; aún falta validar un flujo completo con un archivo real.
+- **Descarga pública:** [v0.1.0-alpha.1](https://github.com/smouj/PhotoAdobado/releases/tag/v0.1.0-alpha.1) es una versión alpha y conserva el icono anterior. El flujo con archivos reales aún no está validado; tenlo en cuenta antes de descargarla.
 - **Commit de origen:** 03d0c7e3b39cfb401cdbba590431141ee4c6c8fa.
 
 ## Qué incluye
@@ -37,7 +37,7 @@ Editor de imagen nativo, local y open source. Derivado de PhotoCraft, rebrandead
 - Interfaz nativa en Rust con egui/wgpu; sin Electron ni webview.
 - Funciona sin conexión y sin cuentas.
 
-La lista completa de funciones y su estado están en la documentación upstream. La madurez es la de PhotoCraft: alpha.
+Estas funciones corresponden al proyecto base. La compatibilidad declarada con PSD y otros formatos aún no se ha comprobado aquí mediante un flujo con archivos reales.
 
 ## Build
 
