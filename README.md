@@ -1,5 +1,10 @@
 # PhotoAdobado
 
+[![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-6cb6ff)](LICENSE-MIT)
+[![Rust](https://img.shields.io/badge/Rust-1.95%2B-ff7a59)](Cargo.toml)
+[![Status](https://img.shields.io/badge/status-early%20alpha-d69e2e)](#photo-adobado)
+[![Adobado Kit](https://img.shields.io/badge/Adobado%20Kit-hub-b8f34a)](https://github.com/smouj/Adobado_Kit)
+
 Editor de imagen nativo, local y open source. Derivado de PhotoCraft, rebrandeado para Adobado Kit.
 
 > **Alpha temprana.** Es un derivado de un proyecto en desarrollo activo. No es un sustituto profesional de Photoshop ni una versión estable.
