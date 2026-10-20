@@ -11,7 +11,7 @@
 
 Retoca imágenes con capas, máscaras, ajustes y compatibilidad declarada con PSD.
 
-> **Pruebas en Windows (20/10/2026):** la compilación, la instalación y el inicio se han comprobado. Aún falta probar un flujo completo con un archivo real: abrirlo, editarlo y exportarlo.
+> **Pruebas en Windows (21/10/2026):** la compilación, la instalación y el inicio se han comprobado. Aún falta probar un flujo completo con un archivo real: abrirlo, editarlo y exportarlo.
 >
 > Proyecto independiente. No afiliado a ArtCraft ni a Adobe.
 
@@ -22,7 +22,7 @@ Retoca imágenes con capas, máscaras, ajustes y compatibilidad declarada con PS
 ## Estado
 
 - **Build de Windows:** correcto en GitHub Actions; consulta el [workflow actual](https://github.com/smouj/PhotoAdobado/actions/workflows/windows-build.yml).
-- **Instalación e inicio:** comprobados en Windows el 20/10/2026.
+- **Instalación e inicio:** comprobados en Windows el 21/10/2026.
 - **Prueba con un archivo:** aún falta completar el flujo de abrir, editar y exportar.
 - **Estado:** alpha; aún falta validar un flujo completo con un archivo real.
 - **Descarga pública:** [v0.1.0-alpha.1](https://github.com/smouj/PhotoAdobado/releases/tag/v0.1.0-alpha.1) es una versión alpha y conserva el icono anterior. El flujo con archivos reales aún no está validado; tenlo en cuenta antes de descargarla.
